@@ -1,0 +1,50 @@
+             File 1               File 2             File 3           File 4             File 5               File 6
+
+
+
+
+             						       Mappers compete with each other to grab files to map()
+
+
+
+
+
+                             Mapper 1                          Mapper 2                         Mapper 3
+
+
+
+
+                      <key,{value,value,value}>            <key,{value,value,value}>          <key,{value,value}>
+                      <key,{value}>
+
+                      			↓									↓ 								↓
+
+
+                      			BLACK BOX: Given a key, return the partition number this key should go to
+
+
+
+
+
+
+                      Partition 1					Partition 2						Partition 3					Partition 4
+
+
+                      	   ↓							↓								↓							↓
+
+
+                      Reducer 1						Reducer 2						Reducer 3					Reducer 4
+
+
+
+
+
+                      					Reducer threads sort the keys in the partitions and then reduce()
+
+
+
+
+
+
+
+
