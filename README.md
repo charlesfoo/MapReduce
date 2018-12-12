@@ -1,4 +1,8 @@
 # MapReduce
+
+##### *Implemented in C*
+
+#### Author: **Foo Zhi Yuan**
 A multithreaded MapReduce I implemented in C from scratch that can takes in arbitrary number of files, map and reduce.
 
 
